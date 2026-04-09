@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Liv Pet’s Bestfriend</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1a1f4d, #4b3f8f);
+    color: #fff;
+}
+
+header, nav {
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: #dcd6ff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px 0;
+}
+
+.image-section img {
+    width: 260px;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.price-card {
+    background: rgba(255,255,255,0.12);
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.price {
+    color: #4cc9f0;
+    font-size: 1.4em;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    border: none;
+}
+
+.button {
+    background: linear-gradient(135deg, #7a6cff, #4cc9f0);
+    padding: 12px;
+    border-radius: 25px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #dcd6ff;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Liv Pet’s Bestfriend</h1>
+    <p>Luxury Pet Care in Tuscaloosa, AL 🐾</p>
+</header>
+
+<nav>
+    <a href="#pricing">Pricing</a>
+    <a href="#booking">Book</a>
+    <a href="#map">Location</a>
+    <a href="#payment">Payment</a>
+</nav>
+
+<!-- DOG IMAGE -->
+<section class="image-section">
+    <img src="dog.jpg" alt="Pet">
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="section">
+<h2 style="text-align:center;">Pricing</h2>
+
+<div class="pricing-grid">
+<div class="price-card"><h3>Day Care (12 hrs)</h3><p class="price">$250</p></div>
+<div class="price-card"><h3>Half Day (6 hrs)</h3><p class="price">$150</p></div>
+<div class="price-card"><h3>Dog Boarding</h3><p class="price">$300</p></div>
+<div class="price-card"><h3>House Sitting</h3><p class="price">$300</p></div>
+<div class="price-card"><h3>Dog Walking 30 min</h3><p class="price">$30</p></div>
+<div class="price-card"><h3>Dog Walking 60 min</h3><p class="price">$50</p></div>
+<div class="price-card"><h3>Drop-In 20 min</h3><p class="price">$15</p></div>
+<div class="price-card"><h3>Drop-In 30 min</h3><p class="price">$30</p></div>
+<div class="price-card"><h3>Drop-In 60 min</h3><p class="price">$60</p></div>
+<div class="price-card"><h3>Overnight (Client Home)</h3><p class="price">$200</p></div>
+<div class="price-card"><h3>Overnight (My Home)</h3><p class="price">$300</p></div>
+<div class="price-card"><h3>Fish Care</h3><p class="price">$20</p></div>
+<div class="price-card"><h3>Medication</h3><p class="price">$10</p></div>
+<div class="price-card"><h3>Small Animal</h3><p class="price">$35</p></div>
+<div class="price-card"><h3>Plant Watering</h3><p class="price">$15</p></div>
+<div class="price-card"><h3>Reptile Care</h3><p class="price">$30</p></div>
+</div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking" class="section">
+<div class="card">
+<h2>Book a Service</h2>
+<form action="mailto:oamcgrew@gmail.com" method="post" enctype="text/plain">
+<input type="text" placeholder="Name" required>
+<input type="email" placeholder="Email" required>
+<input type="date" required>
+<textarea placeholder="Pet details..."></textarea>
+<button class="button">Submit</button>
+</form>
+</div>
+</section>
+
+<!-- MAP -->
+<section id="map" class="section">
+<div class="card">
+<h2>Our Location</h2>
+<iframe src="https://maps.google.com/maps?q=Tuscaloosa%20AL&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+</div>
+</section>
+
+<!-- PAYMENT -->
+<section id="payment" class="section">
+<div class="card">
+<h2>Payment Options</h2>
+<p>We accept Cash App for easy and secure payments:</p>
+<h3 style="color:#4cc9f0;">$olivvia77</h3>
+<p>Please include your name and service in the payment note.</p>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Liv Pet’s Bestfriend 🐾</p>
+</footer>
+
+</body>
+</html>
